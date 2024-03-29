@@ -1,2 +1,9 @@
 # ProjectWork
-Final project work for the front-end development course
+
+Final project work for the front-end development course by Fondazione Mondo Digitale
+
+Copy of the website template: https://rainbowit.net/html/inbio/index.html#blog
+
+Collaborators: Gloria Aiello, Elisa Paglia, Ylenia
+
+Created using: HTML5, CSS3, JavaScript (ES6), Bootstrap 5, Vue.js
