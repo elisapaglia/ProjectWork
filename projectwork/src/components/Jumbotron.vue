@@ -1,7 +1,4 @@
 <template>
-
-
-
 <div id="home">
     <div class="area-slide pt-1">
         <div class="contenitore container">
@@ -95,7 +92,6 @@
 </div> <!--#home-->
 
 
-ì
 </template>
   
   <script>
@@ -154,7 +150,7 @@
     margin: 0 auto; /* Centra l'area slide */
     display: block;
     position: relative;
-
+    margin-top: 150px;
     max-width: 1100px; /* larghezza massima dell'area slide */
     padding-bottom: 100px;
 
@@ -243,7 +239,8 @@
   margin: 4px 2px; 
   cursor: pointer; 
   border-radius: 5px; 
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; 
+  transition: background 0.3s ease-in-out, 
+  transform 0.3s ease-in-out; 
   box-shadow: -2px -5px 10px #2b2b2b;
   white-space: nowrap;
 
@@ -252,8 +249,8 @@
 .area-socialskill a:hover {
 background: linear-gradient(145deg, #1a1e21, #121416); /* Cambia il gradient al passaggio del mouse */
   transform: translateY(-5px); /* Sposta leggermente in alto il pulsante */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Aggiunge un'ombra per un effetto sollevato */
-  color: white; /* Mantiene il colore del testo a rosso anche al passaggio del mouse */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: white; 
 }
 
 /*seconda colonna:*/

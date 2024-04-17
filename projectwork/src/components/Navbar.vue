@@ -1,5 +1,5 @@
 <template>
-
+<div class="menu">
   <nav class="navbar">
   <div class="conteinerlogo">
     <div class="logo">
@@ -15,22 +15,35 @@
       <span></span>
     </button>
 
+    <div class="nav-links">
+      <a :href="$route.path === '/' ? '/' : '/'" class="nav-btn" :class="{ active: isActive('/') }">  <span class="nav-link"> HOME </span> </a>
+      <a :href="$route.path === '/features' ? '/features' : '/features'" class="nav-btn" :class="{ active: isActive('/features') }">  <span class="nav-link"> FEATURES </span> </a>
+      <a :href="$route.path === '/portfolio' ? '/portfolio' : '/portfolio'" class="nav-btn" :class="{ active: isActive('/portfolio') }"> <span class="nav-link"> PORTFOLIO </span> </a>
+      <a :href="$route.path === '/resume' ? '/resume' : '/resume'" class="nav-btn" :class="{ active: isActive('/resume') }"><span class="nav-link">RESUME</span></a>
+      <a :href="$route.path === '/clients' ? '/clients' : '/clients'" class="nav-btn" :class="{ active: isActive('/clients') }"> <span class="nav-link">CLIENTS</span></a>
+      <a :href="$route.path === '/pricing' ? '/pricing' : '/pricing'" class="nav-btn" :class="{ active: isActive('/pricing') }"> <span class="nav-link">PRICING</span></a>
+      <a :href="$route.path === '/blog' ? '/blog' : '/blog'" class="nav-btn" :class="{ active: isActive('/blog') }"><span class="nav-link">BLOG</span></a>
+      <a :href="$route.path === '/contact' ? '/contact' : '/contact'" class="nav-btn" :class="{ active: isActive('/contact') }"> <span class="nav-link">CONTACT</span></a>
+
+    <li class="nav-link px-3 my-2 buy-now"> <router-link to="/buy">BUY NOW</router-link></li>
+</div>
+
+<!-- 
     <div class="nav-links" >
     <ul>
       <li ><router-link to="/">HOME</router-link></li>
       <li ><router-link to="clients">FEATURES</router-link></li>
       <li><router-link to="/pricing">PORTFOLIO</router-link></li>
-      <li ><router-link to="/blog">RESUME</router-link></li>
-      <li ><router-link to="/contact">PRICING</router-link></li>
-      <li ><router-link to="clients">BLOG</router-link></li>
-      <li><router-link to="/pricing">PORTFOLIO</router-link></li>
-      <li ><router-link to="/blog">RESUME</router-link></li>
+      <li ><router-link to="/resume">RESUME</router-link></li>
+
+      <li ><router-link to="clients">CLIENTS</router-link></li>
+      <li><router-link to="/pricing">PRICING</router-link></li>
       <li ><router-link to="/contact">CONTACT</router-link></li>
 
       <li class="nav-link px-3 my-2 buy-now"> <router-link to="/buy">BUY NOW</router-link></li>
     </ul>
   </div>
-
+-->
   <div class="sidebar " :class="{ open: isOpen }">
     <div class="close-icon" @click="toggleMenu">X</div>
   <div class="sidebar-content">
@@ -69,6 +82,7 @@
 </div>
 
   </nav>
+</div>
   <div class="overlay" v-if="isOpen" @click="toggleMenu"></div>
 
 </template>
@@ -84,7 +98,24 @@ export default {
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;
+    },
+    isActive(path) {
+      return this.$route.path === path;
+    },
+    scrollToFeatures() {
+
+      const featuresElement = document.getElementById('features');
+      if (featuresElement) {
+        const yOffset = featuresElement.getBoundingClientRect().top;
+  
+        window.scrollTo({ top: yOffset, behavior: 'smooth' });
+      }
     }
+
+
+  
+
+
   }
 }
 
@@ -92,15 +123,85 @@ export default {
 
 <!--navbar -->
 <style>
+
+
+.nav-links {
+  display: flex;
+  align-items: center; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links .nav-btn {
+  margin: 0 10px;
+  text-decoration: none;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  transition: var(--transition);
+  font-size: 13px;
+  font-weight: var(--s-regular);
+  font-family: var(--font-secondary);
+}
+
+.nav-links .nav-btn.active {
+  color: white;
+}
+
+.buy-now a {
+  font-size: 15px;
+  color: #ff014f;
+  background: linear-gradient(145deg, #1e2024, #1a1c1f);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: -2px -5px 10px #2b2b2b;
+  white-space: nowrap;
+}
+
+.buy-now a:hover {
+  background: linear-gradient(145deg, #1a1e21, #121416);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: #ff014f;
+}
+.buy-now a:visited {
+  color: #ff014f;
+}
+
+
+
+
+
+
+
+
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212529;
+  z-index: 1000;
+
+}
+
 .navbar {
   margin: 30px;
+  height: 35px;
   display: flex;
   flex-wrap: nowrap; 
-
   align-items: center;
   justify-content: space-between;
-  font-family: 'Montserrat', sans-serif
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 
