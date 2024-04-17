@@ -1,4 +1,7 @@
 <template>
+  <NavBar />
+  <Jumbotron />
+  <Features />
   <PortfolioComponent />
   <ResumeComponent />
   <TestimonialComponent />
@@ -8,6 +11,9 @@
 </template>
 
 <script>
+import NavBar from './components/NavBar.vue'
+import Jumbotron from './components/Jumbotron.vue'
+import Features from './components/Features.vue'
 import PortfolioComponent from './components/PortfolioComponent.vue'
 import ResumeComponent from './components/ResumeComponent.vue'
 import TestimonialComponent from './components/TestimonialComponent.vue'
@@ -18,6 +24,9 @@ import ContactMe from './components/ContactMe.vue'
 export default {
   name: 'App',
   components: {
+    NavBar,
+    Jumbotron,
+    Features,
     PortfolioComponent,
     ResumeComponent,
     TestimonialComponent,
