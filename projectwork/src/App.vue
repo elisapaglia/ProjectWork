@@ -1,5 +1,5 @@
 <template>
-  <NavBar />
+  <Navbar />
   <Jumbotron />
   <Features />
   <PortfolioComponent />
@@ -8,10 +8,12 @@
   <ClientsComponent />
   <MyBlog />
   <ContactMe />
+  <frecciaSu />
+  <appFooter />
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import Navbar from './components/Navbar.vue';
 import Jumbotron from './components/Jumbotron.vue'
 import Features from './components/Features.vue'
 import PortfolioComponent from './components/PortfolioComponent.vue'
@@ -19,12 +21,14 @@ import ResumeComponent from './components/ResumeComponent.vue'
 import TestimonialComponent from './components/TestimonialComponent.vue'
 import ClientsComponent from './components/ClientsComponent.vue'
 import MyBlog from './components/MyBlog.vue'
+import frecciaSu from './components/frecciaSu.vue'
 import ContactMe from './components/ContactMe.vue'
+import appFooter from './components/appFooter.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar,
+    Navbar,
     Jumbotron,
     Features,
     PortfolioComponent,
@@ -33,6 +37,8 @@ export default {
     ClientsComponent,
     MyBlog,
     ContactMe,
+    frecciaSu,
+    appFooter
   }
 }
 </script>
