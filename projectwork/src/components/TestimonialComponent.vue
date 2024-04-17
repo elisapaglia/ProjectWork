@@ -7,6 +7,7 @@
         <!--carosello-->
         <div class="carousel slide" id="carousel">
             <div class="carousel-inner">
+
                 <!--first slide-->
                 <div class="carousel-item active">
                     <div class="container-fluid d-flex mx-auto">
@@ -27,22 +28,22 @@
                                 <div class="row">
                                     <div>
                                         <div class="btn-group">
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
                                             <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                data-bs-target="#carousel" data-bs-slide="prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="bi bi-arrow-left d-inline-flex" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
                                                         d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
                                                 </svg>
                                             </button>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right ms-3"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                                </svg>
+                                            </button>
                                         </div>
                                         <div class="my-col">
                                             <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
@@ -95,14 +96,15 @@
                         </div>
                     </div>
                 </div>
+
                 <!--second slide-->
                 <div class="carousel-item">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
                             <div class="card1 text-center">
                                 <div class="img-wrapper">
-                                    <img src="../assets/final-home--1st.png" class="card-img-top mx-auto mt-4"
-                                        alt="ragazzo pelato con gli occhiali">
+                                    <img src="../assets/final-home--2nd.png" class="card-img-top mx-auto mt-4"
+                                        alt="ragazzo">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
                                     <span class="text-uppercase">rainbow-themes</span>
@@ -116,7 +118,7 @@
                                     <div>
                                         <div class="btn-group">
                                             <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
+                                                data-bs-target="#carousel" data-bs-slide="next">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -124,7 +126,7 @@
                                                 </svg>
                                             </button>
                                             <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                data-bs-target="#carousel" data-bs-slide="prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
                                                     viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -183,14 +185,15 @@
                         </div>
                     </div>
                 </div>
+
                 <!--third slide-->
                 <div class="carousel-item">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
                             <div class="card1 text-center">
                                 <div class="img-wrapper">
-                                    <img src="../assets/final-home--1st.png" class="card-img-top mx-auto mt-4"
-                                        alt="ragazzo pelato con gli occhiali">
+                                    <img src="../assets/final-home--3rd.png" class="card-img-top mx-auto mt-4"
+                                        alt="ragazzo">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
                                     <span class="text-uppercase">rainbow-themes</span>
@@ -204,7 +207,7 @@
                                     <div>
                                         <div class="btn-group">
                                             <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
+                                                data-bs-target="#carousel" data-bs-slide="next">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -212,7 +215,7 @@
                                                 </svg>
                                             </button>
                                             <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                data-bs-target="#carousel" data-bs-slide="prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
                                                     viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -271,13 +274,14 @@
                         </div>
                     </div>
                 </div>
+
                 <!--fourth slide-->
                 <div class="carousel-item">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
                             <div class="card1 text-center">
                                 <div class="img-wrapper">
-                                    <img src="../assets/final-home--1st.png" class="card-img-top mx-auto mt-4"
+                                    <img src="../assets/final-home--4th.png" class="card-img-top mx-auto mt-4"
                                         alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
@@ -292,7 +296,7 @@
                                     <div>
                                         <div class="btn-group">
                                             <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
+                                                data-bs-target="#carousel" data-bs-slide="next">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -300,7 +304,7 @@
                                                 </svg>
                                             </button>
                                             <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                data-bs-target="#carousel" data-bs-slide="prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
                                                     viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -359,13 +363,14 @@
                         </div>
                     </div>
                 </div>
+
                 <!--fifth slide-->
                 <div class="carousel-item">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
                             <div class="card1 text-center">
                                 <div class="img-wrapper">
-                                    <img src="../assets/final-home--1st.png" class="card-img-top mx-auto mt-4"
+                                    <img src="../assets/final-home--5th.png" class="card-img-top mx-auto mt-4"
                                         alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
@@ -380,7 +385,7 @@
                                     <div>
                                         <div class="btn-group">
                                             <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
+                                                data-bs-target="#carousel" data-bs-slide="next">
                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                     class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -388,7 +393,7 @@
                                                 </svg>
                                             </button>
                                             <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
+                                                data-bs-target="#carousel" data-bs-slide="prev">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
                                                     viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
@@ -448,6 +453,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="indicators-wrapper">
                 <div class="carousel-indicators">
                     <ul>
