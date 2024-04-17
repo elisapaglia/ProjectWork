@@ -1,5 +1,5 @@
 <template>
-<div class="menu">
+<div class="menu ombra">
   <nav class="navbar">
   <div class="conteinerlogo">
     <div class="logo">
@@ -25,7 +25,7 @@
       <a :href="$route.path === '/blog' ? '/blog' : '/blog'" class="nav-btn" :class="{ active: isActive('/blog') }"><span class="nav-link">BLOG</span></a>
       <a :href="$route.path === '/contact' ? '/contact' : '/contact'" class="nav-btn" :class="{ active: isActive('/contact') }"> <span class="nav-link">CONTACT</span></a>
 
-    <li class="nav-link px-3 my-2 buy-now"> <router-link to="/buy">BUY NOW</router-link></li>
+    <li class="nav-link px-3 my-2 buy-now"> <router-link to="/buy" ><span class="fontBuyNow">BUY NOW</span></router-link></li>
 </div>
 
 <!-- 
@@ -124,6 +124,14 @@ export default {
 <!--navbar -->
 <style>
 
+.fontBuyNow {
+  font-size: 12px;
+}
+
+
+.ombra {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Cambia i valori secondo le tue esigenze */
+}
 
 .nav-links {
   display: flex;
@@ -131,6 +139,7 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: -5px;
 }
 
 .nav-links .nav-btn {
@@ -149,7 +158,7 @@ export default {
 }
 
 .buy-now a {
-  font-size: 15px;
+
   color: #ff014f;
   background: linear-gradient(145deg, #1e2024, #1a1c1f);
   border: none;
@@ -170,18 +179,12 @@ export default {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: #ff014f;
+
 }
 .buy-now a:visited {
   color: #ff014f;
+
 }
-
-
-
-
-
-
-
-
 
 
 .menu {
@@ -196,7 +199,7 @@ export default {
 
 .navbar {
   margin: 30px;
-  height: 35px;
+  height: 40px;
   display: flex;
   flex-wrap: nowrap; 
   align-items: center;
