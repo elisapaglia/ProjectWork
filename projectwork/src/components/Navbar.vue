@@ -17,13 +17,13 @@
 
     <div class="nav-links">
       <a :href="$route.path === '/' ? '/' : '/'" class="nav-btn" :class="{ active: isActive('/') }">  <span class="nav-link"> HOME </span> </a>
-      <a :href="$route.path === '/features' ? '/features' : '/features'" class="nav-btn" :class="{ active: isActive('/features') }">  <span class="nav-link"> FEATURES </span> </a>
-      <a :href="$route.path === '/portfolio' ? '/portfolio' : '/portfolio'" class="nav-btn" :class="{ active: isActive('/portfolio') }"> <span class="nav-link"> PORTFOLIO </span> </a>
-      <a :href="$route.path === '/resume' ? '/resume' : '/resume'" class="nav-btn" :class="{ active: isActive('/resume') }"><span class="nav-link">RESUME</span></a>
-      <a :href="$route.path === '/clients' ? '/clients' : '/clients'" class="nav-btn" :class="{ active: isActive('/clients') }"> <span class="nav-link">CLIENTS</span></a>
-      <a :href="$route.path === '/pricing' ? '/pricing' : '/pricing'" class="nav-btn" :class="{ active: isActive('/pricing') }"> <span class="nav-link">PRICING</span></a>
-      <a :href="$route.path === '/blog' ? '/blog' : '/blog'" class="nav-btn" :class="{ active: isActive('/blog') }"><span class="nav-link">BLOG</span></a>
-      <a :href="$route.path === '/contact' ? '/contact' : '/contact'" class="nav-btn" :class="{ active: isActive('/contact') }"> <span class="nav-link">CONTACT</span></a>
+      <a :href="$route.path === '/#features' ? '/#features' : '/#features'" class="nav-btn" :class="{ active: isActive('/features') }">  <span class="nav-link"> FEATURES </span> </a>
+      <a :href="$route.path === '/#portfolio' ? '/portfolio' : 'portfolio'" class="nav-btn" :class="{ active: isActive('/portfolio') }"> <span class="nav-link"> PORTFOLIO </span> </a>
+      <a :href="$route.path === '/#resume' ? '/resume' : 'resume'" class="nav-btn" :class="{ active: isActive('/resume') }"><span class="nav-link">RESUME</span></a>
+      <a :href="$route.path === '/#clients' ? '/#clients' : '/#clients'" class="nav-btn" :class="{ active: isActive('/clients') }"> <span class="nav-link">CLIENTS</span></a>
+      <a :href="$route.path === '/#pricing' ? '/#pricing' : '/#pricing'" class="nav-btn" :class="{ active: isActive('/pricing') }"> <span class="nav-link">PRICING</span></a>
+      <a :href="$route.path === '/#blog' ? '/#blog' : '/#blog'" class="nav-btn" :class="{ active: isActive('/blog') }"><span class="nav-link">BLOG</span></a>
+      <a :href="$route.path === '/#contact' ? '/#contact' : '/#contact'" class="nav-btn" :class="{ active: isActive('/contact') }"> <span class="nav-link">CONTACT</span></a>
 
     <li class="nav-link px-3 my-2 buy-now"> <router-link to="/buy" ><span class="fontBuyNow">BUY NOW</span></router-link></li>
 </div>
