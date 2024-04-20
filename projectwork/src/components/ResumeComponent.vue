@@ -6,34 +6,31 @@
 
         <!--buttons-->
         <div class="container-fluid mb-5 d-flex justify-content-center w-100" id="pills-tab-wrapper">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active btn" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-timeline" type="button" role="tab" aria-controls="pills-timeline"
-                        aria-selected="true">Education</button>
+            <ul class="nav nav-pills mb-3" id="pills-tab">
+                <li class="nav-item">
+                    <button class="nav-link active btn" id="pills-home-tab"
+                        @click="activeTab = 'tab1'">Education</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link btn" id="pills-professional-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-professional" type="button" role="tab" aria-controls="pills-professional"
-                        aria-selected="false">Professional Skills</button>
+                <li class="nav-item">
+                    <button class="nav-link btn" id="pills-professional-tab" @click="activeTab = 'tab2'">Professional
+                        Skills</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link btn" id="pills-experience-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-timeline" type="button" role="tab" aria-controls="pills-timeline"
-                        aria-selected="false">Experience</button>
+                <li class="nav-item">
+                    <button class="nav-link btn" id="pills-experience-tab"
+                        @click="activeTab = 'tab1'">Experience</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link btn" id="pills-interview-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-timeline" type="button" role="tab" aria-controls="pills-timeline"
-                        aria-selected="false">Iterview</button>
+                <li class="nav-item">
+                    <button class="nav-link btn" id="pills-interview-tab" @click="activeTab = 'tab1'">Iterview</button>
                 </li>
             </ul>
         </div>
 
-        <div class="tab-content" id="v-pills-tabContent">
-            <!--education-->
-            <div class="row mx-auto tab-pane fade show d-flex flex-nowrap" id="pills-timeline" role="tabpanel"
-                arialabelledby="pills-education-tab">
+        <!--tabs-->
+        <div class="tab-content">
+            <!---education-->
+            <p :class="{ active: activeTab === 'tab1' }">
+            <div class="row mx-auto d-flex flex-nowrap" id="pills-timeline">
+                <!--first column-->
                 <div class="col w-50">
                     <span>2007 - 2010</span>
                     <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Education Quality</h4>
@@ -43,7 +40,7 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
+                                        <div class="d-inline-block pt-3">
                                             <h5>Personal Portfolio April Fools</h5>
                                             <h6 class="pt-2 pb-4">University of DVI (1997 - 2001)</h6>
                                         </div>
@@ -54,8 +51,7 @@
                                         <p>The education should be very interactual. Ut tincidunt est ac dolor aliquam
                                             sodales.
                                             Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                            ante.</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +61,7 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
+                                        <div class="d-inline-block pt-3">
                                             <h5>Examples Of Personal Portfolio</h5>
                                             <h6 class="pt-2 pb-4">College of Studies (2000 - 2002)</h6>
                                         </div>
@@ -74,10 +70,8 @@
                                     <hr class="w-75 mx-auto">
                                     <div>
                                         <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
-                                            sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                            hendrerit ante.</p>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +81,7 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
+                                        <div class="d-inline-block pt-3">
                                             <h5>Tips For Personal Portfolio</h5>
                                             <h6 class="pt-2 pb-4">University of Studies (1997 - 2001)</h6>
                                         </div>
@@ -97,14 +91,15 @@
                                     <div>
                                         <p>If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales.
                                             Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                            ante.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!--second column-->
                 <div class="col w-50 me-5 ms-4 ps-5 pe-3">
                     <span>2007 - 2010</span>
                     <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Job Experience</h4>
@@ -114,8 +109,8 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
-                                            <h5>Diploma in Web Development</h5>
+                                        <div class="d-inline-block pt-3">
+                                            <h5>Diploma in Web Development </h5>
                                             <h6 class="pt-2 pb-4">BSE In CSE (2004 - 2008)</h6>
                                         </div>
                                         <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.70/5</div>
@@ -123,8 +118,8 @@
                                     <hr class="w-75 mx-auto">
                                     <div>
                                         <p>Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales.
-                                            Phasellus
-                                            sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.
+                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
+                                            ante.
                                         </p>
                                     </div>
                                 </div>
@@ -135,7 +130,7 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
+                                        <div class="d-inline-block pt-3">
                                             <h5>The Personal Portfolio Mystery</h5>
                                             <h6 class="pt-2 pb-4">Job at Rainbow-Themes (2008 - 2016)</h6>
                                         </div>
@@ -145,8 +140,7 @@
                                     <div>
                                         <p>Generate Lorem Ipsum which looks. Ut tincidunt est ac dolor aliquam sodales.
                                             Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                            ante.</p>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +150,7 @@
                             <div class="content text-start d-flex flex-nowrap">
                                 <div>
                                     <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block">
+                                        <div class="d-inline-block pt-3">
                                             <h5>Diploma in Computer Science</h5>
                                             <h6 class="pt-2 pb-4">Works at Plugin Development (2016 - 2020)</h6>
                                         </div>
@@ -165,10 +159,9 @@
                                     <hr class="w-75 mx-auto">
                                     <div>
                                         <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
-                                            sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                            hendrerit
+                                            ante.</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,16 +169,19 @@
                     </div>
                 </div>
             </div>
+            </p>
 
             <!--professional-->
-            <div class="tab-pane fade row mx-auto d-flex flex-nowrap" id="pills-professional" role="tabpanel"
-                aria-labelledby="pills-professional-tab" tabindex="0">
-                <div class="col w-50 float-start">
+            <p :class="{ active: activeTab === 'tab2' }">
+            <div class="d-flex flex-nowrap mx-auto w-75" id="pills-professional">
+                <!--first column-->
+                <div class="col w-50 ms-5 pe-5 float-start">
                     <div>
                         <h6 class="fs-6">Features</h6>
                         <h4 class="pt-2 pb-3 fs-1">Design Skill</h4>
                     </div>
                     <div class="pt-5 pe-5">
+                        <!--first bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">photoshop</p>
@@ -195,6 +191,7 @@
                                 <div class="myBar" id="photoshop"></div>
                             </div>
                         </div>
+                        <!--second bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">figma</p>
@@ -204,6 +201,7 @@
                                 <div class="myBar" id="figma"></div>
                             </div>
                         </div>
+                        <!--third bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">adobe xd</p>
@@ -213,6 +211,7 @@
                                 <div class="myBar" id="xd"></div>
                             </div>
                         </div>
+                        <!--fourth bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">adobe illustrator</p>
@@ -222,6 +221,7 @@
                                 <div class="myBar" id="illustrator"></div>
                             </div>
                         </div>
+                        <!--fifth bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">design</p>
@@ -233,14 +233,16 @@
                         </div>
                     </div>
                 </div>
+                <!--second column-->
                 <div class="col w-50 float-start ms-3">
                     <div>
                         <h6 class="fs-6">Features</h6>
                         <h4 class="pt-2 pb-3 fs-1">Development Skill</h4>
                     </div>
-                    <div class="pt-5 pe-5">
+                    <div class="pt-5">
+                        <!--first bar-->
                         <div>
-                            <div class="py-3">
+                            <div class="py-3 w-100">
                                 <p class="d-inline-block float-start text-uppercase">html</p>
                                 <p class="d-inline-block float-end">85%</p>
                             </div>
@@ -248,8 +250,9 @@
                                 <div class="myBar" id="html"></div>
                             </div>
                         </div>
+                        <!--second bar-->
                         <div>
-                            <div class="py-3">
+                            <div class="py-3 w-100">
                                 <p class="d-inline-block float-start text-uppercase">css</p>
                                 <p class="d-inline-block float-end">80%</p>
                             </div>
@@ -257,6 +260,7 @@
                                 <div class="myBar" id="css"></div>
                             </div>
                         </div>
+                        <!--third bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">javascript</p>
@@ -266,6 +270,7 @@
                                 <div class="myBar" id="js"></div>
                             </div>
                         </div>
+                        <!--fourth bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">software</p>
@@ -275,6 +280,7 @@
                                 <div class="myBar" id="software"></div>
                             </div>
                         </div>
+                        <!--fifth bar-->
                         <div>
                             <div class="py-3">
                                 <p class="d-inline-block float-start text-uppercase">plugin</p>
@@ -286,8 +292,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+            </p>
         </div>
     </div>
 </template>
@@ -295,6 +301,11 @@
 <script>
 export default {
     name: 'ResumeComponent',
+    data() {
+        return {
+            activeTab: 'tab1'
+        };
+    }
 }
 </script>
 
@@ -333,11 +344,15 @@ h2 {
     color: #c4cfde;
 }
 
-#pills-timeline,
-#pills-professional {
-    position: relative;
+.tab-content>p {
+    display: none;
 }
 
+.tab-content>p.active {
+    display: block;
+}
+
+/*buttons*/
 #pills-tab-wrapper {
     border: none;
     padding-left: 30px;
@@ -376,6 +391,7 @@ h2 {
 
 }
 
+/*education*/
 span {
     text-transform: uppercase;
     color: #ff014f;
@@ -432,26 +448,6 @@ h4 {
 #pills-timeline,
 #pills-professional {
     font-family: 'Poppins', sans serif;
-    position: relative;
-}
-
-#pills-professional {
-    margin-top: -1380px;
-    padding-bottom: 900px;
-    animation-name: example8;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes example8 {
-    from {
-        padding-bottom: 900px;
-    }
-
-    to {
-        padding-bottom: 50px;
-        margin-bottom: -900px;
-    }
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -496,7 +492,6 @@ h4 {
     color: #ff014f;
 }
 
-/* Fix the circle for containers on the right side */
 .right::after {
     left: -16px;
 }
@@ -514,19 +509,19 @@ h4 {
     padding: 27px;
 }
 
-.content h5,
+#pills-timeline .content h5,
 .content h6 {
     font-family: 'Poppins', sans serif;
 }
 
-.content h5 {
+#pills-timeline .content h5 {
     color: white;
     font-size: 25px;
     font-weight: 500;
 }
 
-.content h6 {
-    color: #c4cfde;
+#pills-timeline .content h6 {
+    color: #ff014f;
     font-size: 13px;
     font-weight: 300;
 }
@@ -545,11 +540,16 @@ h4 {
     font-weight: 300;
 }
 
-p {
+#pills-timeline p {
     color: #c4cfde;
     font-size: 20px;
     font-weight: 400;
     padding-top: 20px;
+}
+
+/*professional*/
+#pills-professional {
+    padding-bottom: 100px;
 }
 
 #pills-professional p {
