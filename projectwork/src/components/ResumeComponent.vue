@@ -20,7 +20,7 @@
                         @click="activeTab = 'tab1'">Experience</button>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link btn" id="pills-interview-tab" @click="activeTab = 'tab1'">Iterview</button>
+                    <button class="nav-link btn" id="pills-interview-tab" @click="activeTab = 'tab2'">Interview</button>
                 </li>
             </ul>
         </div>

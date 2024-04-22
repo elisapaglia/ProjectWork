@@ -1,96 +1,88 @@
 <template>
     <div id="testimonial">
         <hr>
-        <h6 class="text-center pb-4 text-uppercase">WHAT CLIENTS SAY</h6>
+        <h6 class="text-center pb-4 text-uppercase">what clients say</h6>
         <h2 class="text-center pb-5">Testimonial</h2>
 
-        <!--carosello-->
-        <div class="carousel slide" id="carousel">
-            <div class="carousel-inner">
-
+        <!--slider-->
+        <div class="slider-container d-flex">
+            <div class="slider d-flex flex-nowrap mx-auto">
                 <!--first slide-->
-                <div class="carousel-item active">
+                <div class="slide active">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
-                            <div class="card1 text-center">
+                            <!--card with image-->
+                            <div class="card1 text-center w-50 p-4">
                                 <div class="img-wrapper">
                                     <img src="../assets/final-home--1st.png" class="card-img-top mx-auto mt-4"
                                         alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
                                     <span class="text-uppercase">rainbow-themes</span>
-                                    <h3 class="mt-3">Nevine Acotanza</h3>
+                                    <h3 class="mt-2">Nevine Acotanza</h3>
                                     <h6>Chief Operating Officer</h6>
                                 </div>
                             </div>
                             <hr class="hr-blurry">
-                            <div>
-                                <div class="row">
-                                    <div>
-                                        <div class="btn-group">
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="bi bi-arrow-left d-inline-flex" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                                                </svg>
-                                            </button>
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
+                            <!--card with text-->
+                            <div class="w-50">
+                                <!--buttons-->
+                                <div class="d-flex justify-content-end mt-4" id="bottoni-slider">
+                                    <button class="prev me-4" id="prevSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                    </button>
+                                    <button class="next me-4" id="nextSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!--text-->
+                                <div class="mt-5" id="presentation">
+                                    <div class="d-flex flex-nowrap w-100">
+                                        <div class="d-inline-block mt-3 pt-5 ps-3">
+                                            <h4 class="fs-2 fw-bold">Android App Development</h4>
+                                            <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
                                         </div>
-                                        <div class="my-col">
-                                            <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
-                                                <div class="d-inline-block w-50 ps-3">
-                                                    <h4 class="fs-3 fw-bold">Android App Development</h4>
-                                                    <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
-                                                </div>
-                                                <div class="mybtn-group d-inline-block py-3 ps-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <hr class="mx-auto">
-                                            <p class="ps-5 p-4 py-4">Maecenas finibus nec sem ut imperdiet. Ut tincidunt
-                                                est
-                                                ac
-                                                dolor aliquam sodales.
-                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                                hendrerit
-                                                andte.
-                                                Ut
-                                                tincidunt est ac dolor aliquam sodales phasellus smauris.</p>
+                                        <div class="d-inline-block mt-5 py-3" id="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
                                         </div>
                                     </div>
+                                    <hr class="mx-auto">
+                                    <p class="p-3">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est
+                                        ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                        lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales
+                                        phasellus smauris.</p>
                                 </div>
                             </div>
                         </div>
@@ -98,88 +90,81 @@
                 </div>
 
                 <!--second slide-->
-                <div class="carousel-item">
+                <div class="slide">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
-                            <div class="card1 text-center">
+                            <!--card with image-->
+                            <div class="card1 text-center w-50 p-4">
                                 <div class="img-wrapper">
                                     <img src="../assets/final-home--2nd.png" class="card-img-top mx-auto mt-4"
-                                        alt="ragazzo">
+                                        alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
-                                    <span class="text-uppercase">rainbow-themes</span>
-                                    <h3 class="mt-3">Nevine Acotanza</h3>
-                                    <h6>Chief Operating Officer</h6>
+                                    <span class="text-uppercase">bound-trolola</span>
+                                    <h3 class="mt-2">Jone Duone Joe </h3>
+                                    <h6>Operating Officer</h6>
                                 </div>
                             </div>
                             <hr class="hr-blurry">
-                            <div>
-                                <div class="row">
-                                    <div>
-                                        <div class="btn-group">
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                                                </svg>
-                                            </button>
+                            <!--card with text-->
+                            <div class="w-50" id="presentation">
+                                <!--buttons-->
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button class="prev me-4" id="prevSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                    </button>
+                                    <button class="next me-4" id="nextSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!--text-->
+                                <div class="p-4 mt-5 pt-3">
+                                    <div class="d-flex flex-nowrap w-100">
+                                        <div class="d-inline-block ps-3">
+                                            <h4 class="fs-2 fw-bold">Web App Development</h4>
+                                            <h6 class="lh-base">Upwork - Mar 4, 2016 - Aug 30, 2021</h6>
                                         </div>
-                                        <div class="my-col">
-                                            <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
-                                                <div class="d-inline-block w-50 ps-3">
-                                                    <h4 class="fs-3 fw-bold">Android App Development</h4>
-                                                    <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
-                                                </div>
-                                                <div class="mybtn-group d-inline-block py-3 ps-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <hr class="mx-auto">
-                                            <p class="ps-5 p-4 py-4">Maecenas finibus nec sem ut imperdiet. Ut tincidunt
-                                                est
-                                                ac
-                                                dolor aliquam sodales.
-                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                                hendrerit
-                                                andte.
-                                                Ut
-                                                tincidunt est ac dolor aliquam sodales phasellus smauris.</p>
+                                        <div class="d-inline-block py-3 ps-4" id="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
                                         </div>
                                     </div>
+                                    <hr class="mx-auto">
+                                    <p class="p-3">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est
+                                        ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                        lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales
+                                        phasellus smauris.</p>
                                 </div>
                             </div>
                         </div>
@@ -187,88 +172,81 @@
                 </div>
 
                 <!--third slide-->
-                <div class="carousel-item">
+                <div class="slide">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
-                            <div class="card1 text-center">
+                            <!--card with image-->
+                            <div class="card1 text-center w-50 p-4">
                                 <div class="img-wrapper">
                                     <img src="../assets/final-home--3rd.png" class="card-img-top mx-auto mt-4"
-                                        alt="ragazzo">
+                                        alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
-                                    <span class="text-uppercase">rainbow-themes</span>
-                                    <h3 class="mt-3">Nevine Acotanza</h3>
-                                    <h6>Chief Operating Officer</h6>
+                                    <span class="text-uppercase">glassfisom</span>
+                                    <h3 class="mt-2">Nevine Dhawan</h3>
+                                    <h6>CEO of Officer</h6>
                                 </div>
                             </div>
                             <hr class="hr-blurry">
-                            <div>
-                                <div class="row">
-                                    <div>
-                                        <div class="btn-group">
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                                                </svg>
-                                            </button>
+                            <!--card with text-->
+                            <div class="w-50" id="presentation">
+                                <!--buttons-->
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button class="prev me-4" id="prevSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                    </button>
+                                    <button class="next me-4" id="nextSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!--text-->
+                                <div class="p-4 mt-5 pt-3">
+                                    <div class="d-flex flex-nowrap w-100">
+                                        <div class="d-inline-block ps-3">
+                                            <h4 class="fs-2 fw-bold">Android App Design</h4>
+                                            <h6 class="lh-base">Fiver - Mar 4, 2015 - Aug 30, 2021</h6>
                                         </div>
-                                        <div class="my-col">
-                                            <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
-                                                <div class="d-inline-block w-50 ps-3">
-                                                    <h4 class="fs-3 fw-bold">Android App Development</h4>
-                                                    <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
-                                                </div>
-                                                <div class="mybtn-group d-inline-block py-3 ps-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <hr class="mx-auto">
-                                            <p class="ps-5 p-4 py-4">Maecenas finibus nec sem ut imperdiet. Ut tincidunt
-                                                est
-                                                ac
-                                                dolor aliquam sodales.
-                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                                hendrerit
-                                                andte.
-                                                Ut
-                                                tincidunt est ac dolor aliquam sodales phasellus smauris.</p>
+                                        <div class="d-inline-block py-3 ps-4" id="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
                                         </div>
                                     </div>
+                                    <hr class="mx-auto">
+                                    <p class="p-3">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est
+                                        ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                        lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales
+                                        phasellus smauris.</p>
                                 </div>
                             </div>
                         </div>
@@ -276,88 +254,81 @@
                 </div>
 
                 <!--fourth slide-->
-                <div class="carousel-item">
+                <div class="slide">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
-                            <div class="card1 text-center">
+                            <!--card with image-->
+                            <div class="card1 text-center w-50 p-4">
                                 <div class="img-wrapper">
                                     <img src="../assets/final-home--4th.png" class="card-img-top mx-auto mt-4"
                                         alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
-                                    <span class="text-uppercase">rainbow-themes</span>
-                                    <h3 class="mt-3">Nevine Acotanza</h3>
-                                    <h6>Chief Operating Officer</h6>
+                                    <span class="text-uppercase">ncd - design</span>
+                                    <h3 class="mt-2">Mevine Thoda</h3>
+                                    <h6>Marketing Officer</h6>
                                 </div>
                             </div>
                             <hr class="hr-blurry">
-                            <div>
-                                <div class="row">
-                                    <div>
-                                        <div class="btn-group">
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                                                </svg>
-                                            </button>
+                            <!--card with text-->
+                            <div class="w-50" id="presentation">
+                                <!--buttons-->
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button class="prev me-4" id="prevSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                    </button>
+                                    <button class="next me-4" id="nextSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!--text-->
+                                <div class="p-4 mt-5 pt-3">
+                                    <div class="d-flex flex-nowrap w-100">
+                                        <div class="d-inline-block ps-3">
+                                            <h4 class="fs-2 fw-bold">CEO - Marketing</h4>
+                                            <h6 class="lh-base">Thoda Department - Mar 4, 2018 - Aug 30, 2021</h6>
                                         </div>
-                                        <div class="my-col">
-                                            <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
-                                                <div class="d-inline-block w-50 ps-3">
-                                                    <h4 class="fs-3 fw-bold">Android App Development</h4>
-                                                    <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
-                                                </div>
-                                                <div class="mybtn-group d-inline-block py-3 ps-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <hr class="mx-auto">
-                                            <p class="ps-5 p-4 py-4">Maecenas finibus nec sem ut imperdiet. Ut tincidunt
-                                                est
-                                                ac
-                                                dolor aliquam sodales.
-                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                                hendrerit
-                                                andte.
-                                                Ut
-                                                tincidunt est ac dolor aliquam sodales phasellus smauris.</p>
+                                        <div class="d-inline-block py-3 ps-4" id="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
                                         </div>
                                     </div>
+                                    <hr class="mx-auto">
+                                    <p class="p-3">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est
+                                        ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                        lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales
+                                        phasellus smauris.</p>
                                 </div>
                             </div>
                         </div>
@@ -365,110 +336,89 @@
                 </div>
 
                 <!--fifth slide-->
-                <div class="carousel-item">
+                <div class="slide">
                     <div class="container-fluid d-flex mx-auto">
                         <div class="d-flex flex-row justify-content-center pb-5">
-                            <div class="card1 text-center">
+                            <!--card with image-->
+                            <div class="card1 text-center w-50 p-4">
                                 <div class="img-wrapper">
                                     <img src="../assets/final-home--5th.png" class="card-img-top mx-auto mt-4"
                                         alt="ragazzo pelato con gli occhiali">
                                 </div>
                                 <div class="card-body text-start ms-4 mt-4">
-                                    <span class="text-uppercase">rainbow-themes</span>
-                                    <h3 class="mt-3">Nevine Acotanza</h3>
-                                    <h6>Chief Operating Officer</h6>
+                                    <span class="text-uppercase">default name</span>
+                                    <h3 class="mt-2">Davei Luace</h3>
+                                    <h6>Chief Operating Manager</h6>
                                 </div>
                             </div>
                             <hr class="hr-blurry">
-                            <div>
-                                <div class="row">
-                                    <div>
-                                        <div class="btn-group">
-                                            <button class="carousel-control-prev" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="next">
-                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                    class="bi bi-arrow-right d-inline-flex" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                                                </svg>
-                                            </button>
-                                            <button class="carousel-control-next" type="button"
-                                                data-bs-target="#carousel" data-bs-slide="prev">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left ms-3"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
-                                                </svg>
-                                            </button>
+                            <!--card with text-->
+                            <div class="w-50" id="presentation">
+                                <!--buttons-->
+                                <div class="d-flex justify-content-end mt-4">
+                                    <button class="prev me-4" id="prevSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                    </button>
+                                    <button class="next me-4" id="nextSlide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!--text-->
+                                <div class="p-4 mt-5 pt-3">
+                                    <div class="d-flex flex-nowrap w-100">
+                                        <div class="d-inline-block ps-3">
+                                            <h4 class="fs-2 fw-bold">Android App Development</h4>
+                                            <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
                                         </div>
-                                        <div class="my-col">
-                                            <div class="d-flex flex-nowrap mt-5 ps-4 pb-3" id="description">
-                                                <div class="d-inline-block w-50 ps-3">
-                                                    <h4 class="fs-3 fw-bold">Android App Development</h4>
-                                                    <h6 class="lh-base">via Upwork - Mar 4, 2015 - Aug 30, 2021</h6>
-                                                </div>
-                                                <div class="mybtn-group d-inline-block py-3 ps-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                        fill="#FF8F3C" class="bi bi-star-fill ms-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <hr class="mx-auto">
-                                            <p class="ps-5 p-4 py-4">Maecenas finibus nec sem ut imperdiet. Ut tincidunt
-                                                est
-                                                ac
-                                                dolor aliquam sodales.
-                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                                hendrerit
-                                                andte.
-                                                Ut
-                                                tincidunt est ac dolor aliquam sodales phasellus smauris.</p>
+                                        <div class="d-inline-block py-3 ps-4" id="stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                fill="#FF8F3C" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
                                         </div>
                                     </div>
+                                    <hr class="mx-auto">
+                                    <p class="p-3">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est
+                                        ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in,
+                                        lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales
+                                        phasellus smauris.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="indicators-wrapper">
-                <div class="carousel-indicators">
-                    <ul>
-                        <li type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></li>
-                        <li type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></li>
-                        <li type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></li>
-                        <li type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 3"></li>
-                        <li type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 3"></li>
-                    </ul>
-                </div>
+                <!--dots-->
+                <div class="dot-container" id="dots-container"></div>
             </div>
         </div>
     </div>
@@ -481,11 +431,14 @@ export default {
 </script>
 
 <style scoped>
-#testimonial {
+* {
     background-color: #212529;
     margin-top: 0;
-    padding-bottom: 100px;
     color: #c4cfde;
+}
+
+#testimonial {
+    padding-bottom: 100px;
 }
 
 hr {
@@ -508,113 +461,95 @@ h2 {
     color: #c4cfde;
 }
 
-.card1 {
-    margin-left: 300px;
-    width: 400px;
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 70%;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.dot-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+    margin: 0 10px;
+}
+
+.dot.active {
+    background-color: #ff014f;
+}
+
+.card1,
+#presentation,
+#presentation button {
     box-sizing: border-box;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    border-radius: 15px;
 }
 
 .img-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-img {
-    width: 350px;
-    border-radius: 15px;
-}
-
-.container-fluid span {
-    color: #ff014f;
-    padding-bottom: 35px;
-    font-size: 13px;
-}
-
-.container-fluid h6 {
-    padding-top: 10px;
-    color: #c4cfde;
-    font-family: 'Poppins', sans serif;
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.container-fluid h3 {
-    font-weight: 700;
-}
-
-.my-col {
-    width: 450px;
-    box-sizing: border-box;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    border-radius: 15px;
-}
-
-.btn-group {
-    margin-bottom: 100px;
-    margin-left: 370px;
-}
-
-.btn-group button {
-    box-sizing: border-box;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    width: 100%;
+    overflow: hidden;
     border-radius: 10px;
-    width: 80px;
-    height: 60px;
+    margin-bottom: 27px;
 }
 
-.btn-group svg {
-    fill: #c4cfde;
-    width: 25px;
+.card-body span {
+    color: #ff014f;
 }
 
-.btn-group svg:hover {
-    fill: #ff014f;
-}
-
-#description {
-    width: 450px;
-    padding-top: 30px;
-}
-
-#description h6 {
-    font-weight: 700;
+.card1 h6 {
+    color: #c4cfde;
     font-size: 15px;
-    opacity: 50%;
+    font-weight: 400;
+    padding-top: 25px;
 }
 
-.mybtn-group {
-    box-sizing: border-box;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    margin-left: 50px;
-    margin-right: 30px;
-    width: 150px;
-    height: 55px;
+#presentation {
+    border-radius: 15px;
+    padding: 25px;
+    background-color: linear-gradient(145deg, #1e2024, #23272b);
 }
 
-.row hr {
-    width: 90%;
-    height: 3px;
-    color: black;
+#bottoni-slider button {
+    border-radius: 15px;
 }
 
-.row p {
-    width: 90%;
+#bottoni-slider button svg {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    fill: #c4cfde;
+}
+
+#presentation h6 {
+    color: #c4cfde;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
     font-size: 20px;
-    font-weight: 500;
-}
-
-.indicators-wrapper {
-    padding-top: 50px;
-}
-
-li {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: inline;
 }
 </style>
