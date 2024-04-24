@@ -428,6 +428,8 @@
 export default {
     name: 'TestimonialComponent',
 }
+
+
 </script>
 
 <style scoped>

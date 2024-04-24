@@ -29,270 +29,277 @@
         <div class="tab-content">
             <!---education-->
             <p :class="{ active: activeTab === 'tab1' }">
-            <div class="row mx-auto d-flex flex-nowrap" id="pills-timeline">
-                <!--first column-->
-                <div class="col w-50">
-                    <span>2007 - 2010</span>
-                    <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Education Quality</h4>
-                    <div class="timeline float-start">
-                        <!--prima timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>Personal Portfolio April Fools</h5>
-                                            <h6 class="pt-2 pb-4">University of DVI (1997 - 2001)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.30/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                <div class="row mx-auto d-flex flex-nowrap" id="pills-timeline">
+                    <!--first column-->
+                    <div class="col w-50">
+                        <span>2007 - 2010</span>
+                        <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Education Quality</h4>
+                        <div class="timeline float-start">
+                            <!--prima timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>The education should be very interactual. Ut tincidunt est ac dolor aliquam
-                                            sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.</p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>Personal Portfolio April Fools</h5>
+                                                <h6 class="pt-2 pb-4">University of DVI (1997 - 2001)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.30/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>The education should be very interactual. Ut tincidunt est ac dolor
+                                                aliquam
+                                                sodales.
+                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit
+                                                ante.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--seconda timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>Examples Of Personal Portfolio</h5>
-                                            <h6 class="pt-2 pb-4">College of Studies (2000 - 2002)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.50/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                            <!--seconda timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
-                                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                            hendrerit ante.</p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>Examples Of Personal Portfolio</h5>
+                                                <h6 class="pt-2 pb-4">College of Studies (2000 - 2002)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.50/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                                                sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit ante.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--terza timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>Tips For Personal Portfolio</h5>
-                                            <h6 class="pt-2 pb-4">University of Studies (1997 - 2001)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.80/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                            <!--terza timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.</p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>Tips For Personal Portfolio</h5>
+                                                <h6 class="pt-2 pb-4">University of Studies (1997 - 2001)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.80/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>If you are going to use a passage. Ut tincidunt est ac dolor aliquam
+                                                sodales.
+                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit
+                                                ante.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!--second column-->
-                <div class="col w-50 me-5 ms-4 ps-5 pe-3">
-                    <span>2007 - 2010</span>
-                    <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Job Experience</h4>
-                    <div class="timeline float-start">
-                        <!--prima timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>Diploma in Web Development </h5>
-                                            <h6 class="pt-2 pb-4">BSE In CSE (2004 - 2008)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.70/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                    <!--second column-->
+                    <div class="col w-50 me-5 ms-4 ps-5 pe-3">
+                        <span>2007 - 2010</span>
+                        <h4 class="fs-1 mt-0 pt-0 mb-5 pt-2">Job Experience</h4>
+                        <div class="timeline float-start">
+                            <!--prima timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.
-                                        </p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>Diploma in Web Development </h5>
+                                                <h6 class="pt-2 pb-4">BSE In CSE (2004 - 2008)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.70/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales.
+                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit
+                                                ante.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--seconda timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>The Personal Portfolio Mystery</h5>
-                                            <h6 class="pt-2 pb-4">Job at Rainbow-Themes (2008 - 2016)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.95/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                            <!--seconda timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>Generate Lorem Ipsum which looks. Ut tincidunt est ac dolor aliquam sodales.
-                                            Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit
-                                            ante.</p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>The Personal Portfolio Mystery</h5>
+                                                <h6 class="pt-2 pb-4">Job at Rainbow-Themes (2008 - 2016)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">4.95/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>Generate Lorem Ipsum which looks. Ut tincidunt est ac dolor aliquam
+                                                sodales.
+                                                Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit
+                                                ante.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--terza timeline-->
-                        <div class="container right ms-3 mt-5">
-                            <div class="content text-start d-flex flex-nowrap">
-                                <div>
-                                    <div class="d-flex flex-nowrap">
-                                        <div class="d-inline-block pt-3">
-                                            <h5>Diploma in Computer Science</h5>
-                                            <h6 class="pt-2 pb-4">Works at Plugin Development (2016 - 2020)</h6>
-                                        </div>
-                                        <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">5.00/5</div>
-                                    </div>
-                                    <hr class="w-75 mx-auto">
+                            <!--terza timeline-->
+                            <div class="container right ms-3 mt-5">
+                                <div class="content text-start d-flex flex-nowrap">
                                     <div>
-                                        <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
-                                            sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
-                                            hendrerit
-                                            ante.</p>
+                                        <div class="d-flex flex-nowrap">
+                                            <div class="d-inline-block pt-3">
+                                                <h5>Diploma in Computer Science</h5>
+                                                <h6 class="pt-2 pb-4">Works at Plugin Development (2016 - 2020)</h6>
+                                            </div>
+                                            <div class="d-inline-block my-5 ms-2 py-2 px-3" id="stars">5.00/5</div>
+                                        </div>
+                                        <hr class="w-75 mx-auto">
+                                        <div>
+                                            <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam
+                                                sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris
+                                                hendrerit
+                                                ante.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </p>
 
             <!--professional-->
             <p :class="{ active: activeTab === 'tab2' }">
-            <div class="d-flex flex-nowrap mx-auto w-75" id="pills-professional">
-                <!--first column-->
-                <div class="col w-50 ms-5 pe-5 float-start">
-                    <div>
-                        <h6 class="fs-6">Features</h6>
-                        <h4 class="pt-2 pb-3 fs-1">Design Skill</h4>
+                <div class="d-flex flex-nowrap mx-auto w-75" id="pills-professional">
+                    <!--first column-->
+                    <div class="col w-50 ms-5 pe-5 float-start">
+                        <div>
+                            <h6 class="fs-6">Features</h6>
+                            <h4 class="pt-2 pb-3 fs-1">Design Skill</h4>
+                        </div>
+                        <div class="pt-5 pe-5">
+                            <!--first bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">photoshop</p>
+                                    <p class="d-inline-block float-end">100%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="photoshop"></div>
+                                </div>
+                            </div>
+                            <!--second bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">figma</p>
+                                    <p class="d-inline-block float-end">95%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="figma"></div>
+                                </div>
+                            </div>
+                            <!--third bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">adobe xd</p>
+                                    <p class="d-inline-block float-end">60%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="xd"></div>
+                                </div>
+                            </div>
+                            <!--fourth bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">adobe illustrator</p>
+                                    <p class="d-inline-block float-end">70%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="illustrator"></div>
+                                </div>
+                            </div>
+                            <!--fifth bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">design</p>
+                                    <p class="d-inline-block float-end">90%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="design"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pt-5 pe-5">
-                        <!--first bar-->
+                    <!--second column-->
+                    <div class="col w-50 float-start ms-3">
                         <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">photoshop</p>
-                                <p class="d-inline-block float-end">100%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="photoshop"></div>
-                            </div>
+                            <h6 class="fs-6">Features</h6>
+                            <h4 class="pt-2 pb-3 fs-1">Development Skill</h4>
                         </div>
-                        <!--second bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">figma</p>
-                                <p class="d-inline-block float-end">95%</p>
+                        <div class="pt-5">
+                            <!--first bar-->
+                            <div>
+                                <div class="py-3 w-100">
+                                    <p class="d-inline-block float-start text-uppercase">html</p>
+                                    <p class="d-inline-block float-end">85%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="html"></div>
+                                </div>
                             </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="figma"></div>
+                            <!--second bar-->
+                            <div>
+                                <div class="py-3 w-100">
+                                    <p class="d-inline-block float-start text-uppercase">css</p>
+                                    <p class="d-inline-block float-end">80%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="css"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!--third bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">adobe xd</p>
-                                <p class="d-inline-block float-end">60%</p>
+                            <!--third bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">javascript</p>
+                                    <p class="d-inline-block float-end">90%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="js"></div>
+                                </div>
                             </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="xd"></div>
+                            <!--fourth bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">software</p>
+                                    <p class="d-inline-block float-end">75%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="software"></div>
+                                </div>
                             </div>
-                        </div>
-                        <!--fourth bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">adobe illustrator</p>
-                                <p class="d-inline-block float-end">70%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="illustrator"></div>
-                            </div>
-                        </div>
-                        <!--fifth bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">design</p>
-                                <p class="d-inline-block float-end">90%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="design"></div>
+                            <!--fifth bar-->
+                            <div>
+                                <div class="py-3">
+                                    <p class="d-inline-block float-start text-uppercase">plugin</p>
+                                    <p class="d-inline-block float-end">70%</p>
+                                </div>
+                                <div id="myProgress">
+                                    <div class="myBar" id="plugin"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--second column-->
-                <div class="col w-50 float-start ms-3">
-                    <div>
-                        <h6 class="fs-6">Features</h6>
-                        <h4 class="pt-2 pb-3 fs-1">Development Skill</h4>
-                    </div>
-                    <div class="pt-5">
-                        <!--first bar-->
-                        <div>
-                            <div class="py-3 w-100">
-                                <p class="d-inline-block float-start text-uppercase">html</p>
-                                <p class="d-inline-block float-end">85%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="html"></div>
-                            </div>
-                        </div>
-                        <!--second bar-->
-                        <div>
-                            <div class="py-3 w-100">
-                                <p class="d-inline-block float-start text-uppercase">css</p>
-                                <p class="d-inline-block float-end">80%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="css"></div>
-                            </div>
-                        </div>
-                        <!--third bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">javascript</p>
-                                <p class="d-inline-block float-end">90%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="js"></div>
-                            </div>
-                        </div>
-                        <!--fourth bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">software</p>
-                                <p class="d-inline-block float-end">75%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="software"></div>
-                            </div>
-                        </div>
-                        <!--fifth bar-->
-                        <div>
-                            <div class="py-3">
-                                <p class="d-inline-block float-start text-uppercase">plugin</p>
-                                <p class="d-inline-block float-end">70%</p>
-                            </div>
-                            <div id="myProgress">
-                                <div class="myBar" id="plugin"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </p>
         </div>
     </div>

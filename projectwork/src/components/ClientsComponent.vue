@@ -7,135 +7,259 @@
         <div class="row justify-content-center w-100">
             <div class="col-4 ms-5 ps-5 mx-auto align-center">
                 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <button type="button" class="btn">Javascript</button>
-                    <button type="button" class="btn">Product design</button>
-                    <button type="button" class="btn">Wordpress</button>
-                    <button type="button" class="btn">HTML to React</button>
-                    <button type="button" class="btn">React to Lavarel</button>
-                    <button type="button" class="btn">Python</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab1'">Javascript</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab2'">Product design</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab1'">Wordpress</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab2'">HTML to React</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab1'">React to Lavarel</button>
+                    <button type="button" class="btn" @click="activeTab = 'tab2'">Python</button>
                 </div>
             </div>
-            <div class="col justify-content-start w-100">
-                <!--prima riga-->
-                <div class="row d-flex flex-nowrap">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="../assets/client1.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">John Due</h5>
+            <div class="tab-content col justify-content-start w-100">
+                <p :class="{ active: activeTab === 'tab1' }">
+                    <!--first line-->
+                    <div class="row d-flex flex-nowrap">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Smith Mart</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4 pt-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client3.png" alt="logo1" class="pb-2">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Add Dev</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client2.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Smith Mart</h5>
+                    <!--second line-->
+                    <div class="row d-flex flex-nowrap mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client4.png" alt="logo1" class="pt-3">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Jone Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Adon Smith</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4 pt-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client3.png" alt="logo1" class="pb-2">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Add Dev</h5>
+                    <!--third line-->
+                    <div class="row d-flex flex-nowrap mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1" class="pt-3">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Jone Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Adon Smith</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--seconda riga-->
-                <div class="row d-flex flex-nowrap mt-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="../assets/client4.png" alt="logo1" class="pt-3">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Jone Due</h5>
+                    <!--fourth line-->
+                    <div class="row d-flex flex-nowrap mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1" class="pt-3">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Jone Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client3.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Adon Smith</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client1.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">John Due</h5>
+                </p>
+                <p :class="{ active: activeTab === 'tab2' }">
+                    <!--first line-->
+                    <div class="row d-flex flex-nowrap mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1" class="pt-3">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Jone Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Adon Smith</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client2.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Adon Smith</h5>
+                    <!--second line-->
+                    <div class="row d-flex flex-nowrap mt-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1" class="pt-3">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Jone Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client3.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Adon Smith</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--terza riga-->
-                <div class="row d-flex flex-nowrap mt-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="../assets/client1.png" alt="logo1" class="pt-3">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Jone Due</h5>
+                    <!--third line-->
+                    <div class="row d-flex flex-nowrap">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Smith Mart</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4 pt-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client3.png" alt="logo1" class="pb-2">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Add Dev</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client2.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">John Due</h5>
+                    <!--fourth line-->
+                    <div class="row d-flex flex-nowrap">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="../assets/client1.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">John Due</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client2.png" alt="logo1">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Smith Mart</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ms-4 pt-4">
+                            <div class="card-body text-center">
+                                <img src="../assets/client3.png" alt="logo1" class="pb-2">
+                                <div>
+                                    <hr class="mb-4">
+                                    <h5 class="card-title">Add Dev</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client1.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Adon Smith</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--quarta riga-->
-                <div class="row d-flex flex-nowrap mt-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="../assets/client2.png" alt="logo1" class="pt-3">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Jone Due</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client1.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">John Due</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card ms-4">
-                        <div class="card-body text-center">
-                            <img src="../assets/client3.png" alt="logo1">
-                            <div>
-                                <hr class="mb-4">
-                                <h5 class="card-title">Adon Smith</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
     </div>
@@ -144,6 +268,11 @@
 <script>
 export default {
     name: 'ClientsComponent',
+    data() {
+        return {
+            activeTab: 'tab1'
+        };
+    }
 }
 </script>
 
@@ -193,6 +322,14 @@ h2 {
 
 .btn:hover {
     color: #ff014f;
+}
+
+.tab-content>p {
+    display: none;
+}
+
+.tab-content>p.active {
+    display: block;
 }
 
 .card {

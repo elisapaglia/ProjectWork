@@ -4,10 +4,10 @@
     <h6 class="text-center pb-4">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h6>
     <h2 class="text-center pb-5">My Portfolio</h2>
 
-    <!--- prima riga -->
+    <!--- first line -->
     <div class="row d-flex">
 
-      <!-- prima card -->
+      <!-- first card -->
       <div class="col d-flex">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -27,9 +27,9 @@
             </div>
             <h5 class="card-title pt-4">The services provided for design
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <!-- seconda card -->
+      <!-- second card -->
       <div class="col d-flex">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -57,9 +57,9 @@
             </div>
             <h5 class="card-title pt-4">Mobile app landing design & app maintain
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -68,7 +68,7 @@
       </div>
 
 
-      <!-- terza card -->
+      <!-- third card -->
       <div class="col d-flex">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -88,9 +88,9 @@
             </div>
             <h5 class="card-title pt-4">Logo design creativity & Application
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -99,10 +99,10 @@
       </div>
     </div>
 
-    <!--- seconda riga -->
+    <!--- second riga -->
     <div class="row d-flex pb-5 mb-0">
 
-      <!-- prima card -->
+      <!-- first card -->
       <div class="col d-flex pb-5">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -122,9 +122,9 @@
             </div>
             <h5 class="card-title pt-4">Mobile app landing design & Services
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <!-- seconda card -->
+      <!-- second card -->
       <div class="col d-flex pb-5">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -152,9 +152,9 @@
             </div>
             <h5 class="card-title pt-4">Design for technology & services
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -162,8 +162,7 @@
         </div>
       </div>
 
-
-      <!-- terza card -->
+      <!-- third card -->
       <div class="col d-flex4 pb-5">
         <div class="card p-4">
           <div class="img-wrapper">
@@ -183,9 +182,9 @@
             </div>
             <h5 class="card-title pt-4">App for technology & services
               <button type="button" class="btn p-1" data-bs-toggle="modal" data-bs-target="#myModal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
-                  <path
-                    d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                 </svg>
               </button>
             </h5>
@@ -201,7 +200,8 @@
           <div class="d-flex justify-content-end pt-5 my-3 me-5">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="container-fluid d-flex flex-nowrap justify-content-center mx-auto my-0 pt-1 pe-5" id="modal-content">
+          <div class="container-fluid d-flex flex-nowrap justify-content-center mx-auto my-0 pt-1 pe-5"
+            id="modal-content">
             <div class="col d-flex justify-content-center">
               <img src="../assets/portfolio-04.jpg" alt="ragazza in bicicletta">
             </div>
@@ -340,7 +340,7 @@ svg:hover {
 }
 
 .card h5:hover,
-.card h5 svg {
+.card h5 svg:hover {
   color: #ff014f;
   fill: #ff014f;
 }
@@ -348,7 +348,8 @@ svg:hover {
 .card h5 svg {
   width: 20px;
   height: 20px;
-  fill: #212428;
+  fill: #c4cfde;
+  background-color: #212428;
 }
 
 .card-title svg {
@@ -363,6 +364,10 @@ svg:hover {
   width: 90%;
   box-sizing: border-box;
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.btn-close {
+  color: #c4cfde;
 }
 
 #modal-content {
