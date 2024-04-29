@@ -1,8 +1,7 @@
 
 
 <template>
-
-    
+   
     <div id="testimonial">
         <hr>
         <h6 class="text-center pb-4 text-uppercase">what clients say</h6>
@@ -10,25 +9,12 @@
         <div class="areaSConteiner">
             <div class="areaSlide ">
                 <!--slider-->
-
-     
-                    <div id="testimonial">
+                        <div id="testimonial">
                         <div v-for="(slide, index) in slides" v-show="index === currentIndex"  :key="slide.id"  class="">
-
-                        
-                        
                         <div class="slide active  ">
                             <div class="slider-containerMod slider-container d-flex">
                                 <div class=" sliderMod slider d-flex  ">
                                     <!--first slide-->
-
-
- 
-   
-
-
-
-
 
                                     <div class="container mt-5 ">
                                         <div class="row rowPrimo">
@@ -36,32 +22,21 @@
                                                 <div class=" ">
                                                     <!-- Colonna sinistra divisa in due righe --><!--card with image-->
                                                     <div class=" cardDestraDimesione card1 text-center p-4 ">
-
-                                                        
                                                         <div class=" contenitoreImgModifiche ">
                                                             <img :src="slide.img"
                                                                 style=" border-radius: 20px;"
                                                                 class="imgModifiche card-img-top mx-auto mt-4"
                                                                 :alt="slide.name">
                                                         </div>
-
-
-
-
                                                         <div class="card-body text-start ms-3 mt-3">
                                                             <span class="text-uppercase">rainbow-themes</span>
                                                             <h3> {{ slide.name }}</h3>
                                                             <h6>{{ slide.role }}</h6>
                                                         </div>
                                                     </div>
-
-
-
                                                 </div>
                                             </div>
                                             <div class="col-md-7">
-
-
                                                 <!-- Colonna destra divisa in due righe -->
                                                 <div class="row ">
                                                     <div class="col-12 ">
@@ -73,11 +48,8 @@
                                                         <div class="p-2  ">
                                                             <!-- Riga Inferiore destra -->
                                                             <div style="height: 40px;"></div>
-
                                                             <!--card with text-->
                                                             <div class="w-50 ">
-
-
                                                             </div>
 
                                                             <!--text-->
@@ -100,9 +72,6 @@
                                                                 <hr class="mx-auto ">
                                                                 <p class="p-3 text-start"> {{ slide.testimonial }}</p>
                                                             </div>
-
-
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -110,7 +79,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>    
@@ -118,12 +86,9 @@
         </div>
     </div></div>
 
-
-
     <!-- Bottoni -->
     <button @click="prevSlide" :disabled="sliding"><i class="fas fa-arrow-left"></i></button>
 <button @click="nextSlide" :disabled="sliding"><i class="fas fa-arrow-right"></i></button>
-
 
     <!-- Dot -->
     <br>
@@ -136,23 +101,11 @@
         Valore attuale di currentIndex: {{ currentIndex }}
     </div>
     <br>
-
-
-
-
 </template>
 
 <script>
-//NUOVO:
-
-
-
-
 export default {
     name: 'TestimonialComponent',
-
-
-
     data() {
         return {
             currentIndex: 0,  // Index della slide attuale
@@ -208,7 +161,6 @@ export default {
                     period: "via Upwork - Mar 4, 2015 - Aug 30, 2021",
                     testimonial: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit andte. Ut tincidunt est ac dolor aliquam sodales phasellus smauris."
                 },
-
             ],
             settings: [
                 {
@@ -219,9 +171,7 @@ export default {
                     slidesToScroll: 1,
                     prevArrow: '<button @click="prevSlide" class="btnn"><i class="fas fa-arrow-left"></i></button>',
                     nextArrow: '<button @click="nextSlide" class="btnn"><i class="fas fa-arrow-right"></i></button>'
-
                 }
-
             ],
             sliding: false,
         };
@@ -248,7 +198,6 @@ export default {
         } else {
             this.currentIndex = 0;
         }
-
     },
     prevSlide() {
         if (this.currentIndex > 0) {
@@ -256,7 +205,6 @@ export default {
         } else {
             this.currentIndex = this.slides.length - 1;
         }
-
     },
     setCurrentIndex(index) {
         this.currentIndex = index;
@@ -280,7 +228,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .areaSConteiner {
@@ -291,16 +238,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
-
 
 .bColor {
     background-color: #212529;
 }
-
-
 
 .btnn {
     width: 60px;
@@ -309,7 +251,6 @@ export default {
     background-color: #262a2e;
     align-items: center;
     justify-content: center;
-
 }
 
 .bi {
@@ -334,26 +275,18 @@ export default {
     border-radius: 50%;
     display: inline-block;
     background-color: #717171;
-
 }
 
 .dot-a.active {
     background-color: #ff014f;
 }
 
-
-
-
 .cardDestraDimesione {
     margin-top: 50px;
     max-height: 540px;
     border-radius: 20px;
     min-height: 520px;
-
-
 }
-
-
 
 .cardDestraModifiche {
     max-height: 600px;
@@ -379,20 +312,15 @@ export default {
     height: 150%;
     object-fit: contain;
     transition: transform 0.3s;
-
 }
 
 .imgModifiche:hover {
     border-radius: 20px;
-
 }
 
 .contenitoreImgModifiche:hover .imgModifiche {
     transform: scale(1.1);
 }
-
-
-
 
 .slider-containerMod {
     position: relative;
@@ -400,17 +328,11 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
-
 }
 
 .sliderMod {
     display: flex !important;
     flex-wrap: nowrap !important;
-
-
 }
 
 .row-extended {
@@ -420,24 +342,19 @@ export default {
     /* Aggiusta i margini per centrare se estesa oltre 100% */
     overflow-x: hidden;
     /* Previene lo scroll orizzontale indesiderato */
-
 }
-
-
 
 .rating .fa-star {
     color: gold;
     /*colore delle stelle */
     margin: 0 2px;
     font-size: 7px;
-
 }
 
 #stars {
     border-radius: 6px;
     box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     max-height: 40px;
-
     vertical-align: middle;
     display: inline-flex;
     align-items: center;
@@ -445,7 +362,6 @@ export default {
 
 .card1 {
     height: 100%;
-
 }
 
 
