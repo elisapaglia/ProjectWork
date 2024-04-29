@@ -4,6 +4,6 @@ Final project work for the front-end development course by Fondazione Mondo Digi
 
 Copy of the website template: https://rainbowit.net/html/inbio/index.html#blog
 
-Collaborators: Gloria Aiello (navbar, jumbotron, features), Elisa Paglia (portfolio, resume, testimonials, clients), Ylenia Porcu (Blog, Contacts)
+Collaborators: Gloria Aiello (navbar, jumbotron, features, testimonials), Elisa Paglia (portfolio, resume, clients), Ylenia Porcu (Blog, Contacts)
 
 Created using: HTML5, CSS3, JavaScript (ES6), Bootstrap 5, Vue.js
